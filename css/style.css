@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Righteous&family=Sarala:wght@700&display=swap');
+
+:root {
+    --white-light: #798381;
+    --grey: #8bf1c3;
+}
+.gradient{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #505855 , #80aa9b , #63aca9, #659cda);
+    background-size: 200% 200%;
+    border-top-right-radius: 500px;
+    box-shadow: 10px 10px 100px 10px rgb(245, 247, 248);
+    animation: colors 5s ease infinite;
+}
+
+span{
+    font-family: 'Poppins',sans-serif;
+    color: #d43913;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body,html{
+    font-family: 'Poppins',sans-serif;
+    background: var(--white-light);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .tree-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tree-container .avatar{
+    width: 213px;
+    height: 213px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+}
+
+.tree-container .avatar img{
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+}
+
+.tree-container .insta-user{
+    margin-top: 15px;
+    color: var(--grey);
+}
+
+.tree-container .links-container{
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.links-container .link{
+    margin-top: 16px;
+    width: 325px;
+    border: 2px solid var(--grey);
+    border-radius: 7px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    
+    padding: 12px 0;
+
+    transition: ease 0.3s;
+}
+
+.links-container .link:hover{
+    background: var(--grey);
+    color: var(--white-light);
+}
+
+.tree-container .socials-container{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: 37%;
+    margin-top: -22%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
+}
+
+.socials-container .social{
+    transform: scale(1.9);
+    transition: ease 0.3s;
+}
+.socials-container .social:hover{
+    transform: scale(1);
+}
