@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/portfolio/logo.jpg" />
+    <title>Aplicativos</title>
+    <link rel="stylesheet" href="css/cssapps.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- ==== Style Switcher ===== -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <link rel="stylesheet" href="css/skins/style-switcher.css">
+    <link rel="stylesheet" href="css/imc.css">
+    <link rel="stylesheet" href="css/torre.css">
+</head>
+<body>
+    <div class="aside">
+        <div class="logo">
+            <a href="#"><span>W</span>álisson</a>
+        </div>
+        <div class="nav-toggler">
+            <span></span>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html" class="active"><i class="fa fa-home"></i>Inicio</a></li>
+        </ul>
+    </div>
+    <section class="home active section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div id="calc-container">
+                      <h2>Calculadora de IMC</h2>
+                      <form id="imc-form">
+                        <div class="form-inputs">
+                          <div class="form-control">
+                            <label for="height">Altura:</label>
+                            <input
+                              type="text"
+                              name="height"
+                              id="height"
+                              placeholder="Exemplo 1,75"
+                              required
+                            />
+                          </div>
+                          <div class="form-control">
+                            <label for="weight">Peso:</label>
+                            <input
+                              type="text"
+                              name="weight"
+                              id="weight"
+                              placeholder="Exemplo 70,5"
+                            />
+                          </div>
+                        </div>
+                        <div class="action-control">
+                          <button id="calc-btn">Calcular</button>
+                          <button id="clear-btn">Limpar</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div id="result-container" class="hide">
+                      <p id="imc-number">Seu IMC: <span></span></p>
+                      <p id="imc-info">Situação atual: <span></span></p>
+                      <h3>Confira as classificações</h3>
+                      <div id="imc-table">
+                        <div class="table-header">
+                          <h4>IMC</h4>
+                          <h4>Classificação</h4>
+                          <h4>Obesidade</h4>
+                        </div>
+                      </div>
+                      <button id="back-btn">Voltar</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="hanoi">
+                <div class="disco d1 t1 p5"></div>
+                <div class="disco1 d2 t1 p4"></div>
+                <div class="disco2 d3 t1 p3"></div>
+                <div class="disco3 d4 t1 p2"></div>
+                <div class="disco4 d5 t1 p1"></div>
+                <div class="tower" onclick="clicktower(0)"></div>
+                <div class="tower" onclick="clicktower(1)"></div>
+                <div class="tower" onclick="clicktower(2)"></div>
+            </div>
+        </div>
+       
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/obrigado.js"></script>
+    <script src="js/imc.js"></script>
+    <script src="js/torre.js"></script>
+    <script src="js/style.switcher.js"></script>
+</body>
+</html>
