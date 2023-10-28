@@ -32,6 +32,17 @@ body{
 ul{
     list-style: none;
 }
+.imc-section {
+    background-color: #f2f2fc;
+    color: #302e4d;
+    /* Estilos específicos para a seção de IMC */
+}
+
+.hanoi-section {
+    background-color: #fdf9ff;
+    color: #504e70;
+    /* Estilos específicos para a seção de Torre de Hanoi */
+}
 .section{
     background: var(--bg-black-900);
     min-height: 100vh;

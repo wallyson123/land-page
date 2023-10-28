@@ -595,10 +595,46 @@ h3.my-profession{
     overflow: hidden;
     cursor: pointer;
 }
-.portfolio .portfolio-item-inner .portfolio-img img{
-    width: 100%;
+.portfolio .portfolio-item-inner .portfolio-img img {
+    height: 200px; /* Define a altura fixa para a imagem */
+    width: auto; /* Mantém a largura proporcional à altura definida */
     display: block;
-} 
+}
+.portfolio-item .portfolio-img {
+    position: relative;
+    overflow: hidden;
+}
+/* Adicione esta regra ao seu arquivo de estilo CSS */
+
+.social-icon {
+    font-size: 40px; /* Tamanho dos ícones editável (altere para o tamanho desejado) */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Adiciona uma transição suave à transformação e à cor de fundo */
+    color: rgb(15, 6, 6); /* Cor do ícone (branco para contrastar com o fundo preto) */
+    border-radius: 50%; /* Bordas arredondadas para criar um ícone circular */
+    display: inline-block;
+}
+
+.social-icon:hover {
+    transform: rotate(360deg); /* Faz o ícone girar 360 graus ao passar o mouse */
+    color: rgb(110, 107, 107); /* Cor do ícone (preto para contrastar com o fundo branco) */
+}
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    opacity: 0; /* Inicialmente, a legenda estará invisível */
+    transition: opacity 0.3s ease; /* Adicionando uma transição suave para o efeito de fade-in */
+}
+
+.portfolio-item:hover .project-info {
+    opacity: 1; /* Quando o mouse passa sobre a imagem, a legenda aparece */
+}
 /* contact */
 .contact-title{
     color: var(--skin-color);
